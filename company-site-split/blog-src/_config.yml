@@ -1,0 +1,42 @@
+title: 회사 블로그
+description: 소식과 아카이브
+url: ""              # 배포 후 루트 도메인 (루트에서는 사용 안함)
+baseurl: "/blog"     # 정적 결과물 경로와 동일
+timezone: Asia/Seoul
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-include-cache
+
+paginate: 5
+paginate_path: "/page:num/"
+
+logo: /assets/img/favicon.svg
+search: true
+breadcrumbs: true
+
+author:
+  name: "Your Company"
+  avatar: /assets/img/favicon.svg
+  bio: "고객의 가치를 함께 만듭니다."
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      read_time: true
+      author_profile: true

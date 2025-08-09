@@ -1,0 +1,7 @@
+main:
+  - title: "블로그 홈"
+    url: "/"
+  - title: "소개"
+    url: "/about/"
+  - title: "문의"
+    url: "/contact/"
